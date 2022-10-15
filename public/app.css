@@ -1,0 +1,17 @@
+@import "styles.css";
+.special {
+    scrollbar-track-color: #f68e3a;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f68e3a;
+    border-radius: 10px;
+}

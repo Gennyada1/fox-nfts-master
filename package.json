@@ -1,0 +1,20 @@
+{
+  "name": "fox-nfts",
+  "version": "1.0.0",
+  "description": "Nft website and would be deployed on netlfy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch",
+    "prod": "NODE_ENV=production postcss ./public/pos.css -o ./public/pos.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.12",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "tailwindcss": "^3.1.8"
+  }
+}
