@@ -2,15 +2,22 @@
     "info":[
         {
             "id":1,
-            "days": "120",
-            "wallet": "oxa*******e2",
+            "days": "1",
+            "wallet": "0x4edAeFe73B7968d5ede738736C730a05D94D7adB",
             "deposit": "1200",
             "redraw": "1101"
         },
         {
             "id":2,
-            "days": "100",
-            "wallet": "oxa*******e2",
+            "days": "2",
+            "wallet": "0x4edAeFe73B7968d5ede738736C730a05D94D7adB",
+            "deposit": "1000",
+            "redraw": "1102"
+        },
+        {
+            "id":2,
+            "days": "3",
+            "wallet": "0x4edAeFe73B7968d5ede738736C730a05D94D7adB",
             "deposit": "1000",
             "redraw": "1102"
         }

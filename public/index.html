@@ -87,16 +87,16 @@
         </div>
         <section id="token"
             class="sliders-img px-5 md:px-16 md:py-10 w-full h-full block md:grid gap-3 grid-cols-2">
-            <div class="container p-2 mx-auto sm:p-4 text-gray-100">
+            <div id="app" class="container p-2 mx-auto sm:p-4 text-gray-100">
                 <div class="flex w-full mb-2 gap-4">
                     <img src="./images/medal.png" alt="" class="h-20 w-20">
                     <div class="flex flex-col gap-2">
-                        <h2 class="text-lg font-semibold leading-tight">Current Deposit <br> & prize</h2>
-                        <span class="font-bold text-xl text-green-700/70">$5,200.22</span>    
+                        <h2 class="text-lg font-semibold leading-tight">Current Deposit <br>Prize</h2>
+                        <span class="font-bold text-xl text-green-700/70">${{totalValue}}.00</span>    
                     </div>
                 </div>
                 <div class="overflow-auto h-96">
-                    <div id="app">
+                    <div >
                     <table class="min-w-full text-xs">
                         <colgroup>
                             <col class="w-24">
@@ -118,7 +118,7 @@
                                     <p>{{item.days}}</p>
                                 </td>
                                 <td class="p-3">
-                                    <p>{{item.wallet}}</p>
+                                    <p>{{item.wallet.slice(0, 5)+'************' + item.wallet.slice(38, 44)}}</p>
                                 </td>
                                 <td class="p-3">
                                     <p>{{item.deposit}}</p>
@@ -174,7 +174,7 @@
                       >Claim token</button
                     >
                 </div>
-                <p class="text-center text-3xl font-black">Buy upto 0.5 bnb to participate in our weekly giveaway of 1.5bnb</p>
+                <p class="text-center text-3xl font-black">Buy upt 0.5 bnb to participate in our weekly giveaway of 1.5bnb</p>
             </div>
         </section>
         <div id="nft" class="block md:grid place-items-center h-[45rem] w-screen object-cover relative">
