@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <title>FOX-NFT</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta name="description" content="As the business grows, we intend to begin launching our own NFT and eventually offer them at auctions. These goods are also offered on the Christies platform; it is one of the most renowned auction houses.">
   </head>
   <body class="overflow-x-hidden relative bg-slate-900">
@@ -62,24 +63,21 @@
         <div class="px-5 md:px-16 py-5 md:my-10">
             <div class="flex flex-col text-center md:text-left md:flex-row flex-auto">
                 <div>
-                    <h1 class="text-[#f68e3a] font-extrabold text-3xl md:text-7xl">
+                    <h1 data-aos="fade-right" data-aos-offset="600" data-aos-easing="linear" class="text-[#f68e3a] font-extrabold text-3xl md:text-7xl">
                         NFT Staking, NFT Marketplace + 3D Metaverse
                     </h1>
-                    <h3 class="font-light text-sm text-slate-300 my-5">
+                    <h3 data-aos="fade-right" class="font-light text-sm text-slate-300 my-5">
                         The second-largest cryptocurrency by market capitalization (market cap), Ether, is a natural subject for comparison with bitcoin.
                         A trading pair is a function that represents two cryptocurrencies that can be exchanged for one another on an exchange, such as ether-bitcoin (ETH/BTC).
                     </h3>
                     <br>
-                    <button href="/"
+                    <a href="#token"
                         class="py-2 px-5 md:px-10 rounded-md font-bold leading-8 inline-block transition-all duration-150 ease-linear text-white hover:bg-white hover:text-black bg-[#f68e3a]">Get
-                        Started</button>
-                    <button href="/"
-                        class="py-2 px-5 md:px-10 rounded-md font-bold leading-8 inline-block transition-all duration-150 ease-linear ml-3 border border-[#f68e3a] hover:bg-[#f68e3a] hover:border-slate-300 text-[#f68e3a] hover:text-white">Watch
-                        Now</button>
+                        Token</a>
                 </div>
                 <div class="hero w-full h-full mt-10 md:mt-0 grid place-items-center">
                     <div>
-                        <img src="./images/icon-pres.png" alt="" class="h-[15rem] w-[15rem] md:h-[25rem] md:w-[25rem]">
+                        <img data-aos="fade-left" src="./images/icon-pres.png" alt="" class="h-[15rem] w-[15rem] md:h-[25rem] md:w-[25rem]">
                     </div>
                 </div>
 
@@ -191,9 +189,6 @@
                             NFT popularity attracted a lot of gyps to the market who use works of other people to create NFT and claim authorship. Even experienced users can buy a borrowed work.
                             We check NFT reliability very thoroughly and work directly with authors for not to buy counterfeit. Our specialists study all works and their authors in details to understand perspectives of one or another work and earn from price increase.
                         </h3>
-                        <button href="/"
-                            class="py-2 px-5 mt-5 md:px-10 rounded-md font-bold leading-8 inline-block transition-all duration-150 ease-linear text-white hover:bg-white hover:text-black bg-[#f68e3a]">Get
-                            Started</button>
                     </div>
                     <div class="hero md:col-span-2 w-full h-full grid place-items-center">
                     </div>
@@ -303,8 +298,11 @@
                 <a href="https://bscscan.com/token/0x7C82560505b981fAea9E8c11d5E0A04F2a0F01CA" class=" text-[#f68e3a]">0x7C82560505b981fAea9E8c11d5E0A04F2a0F01CA</a>
             </div>
         </div>
-    <script src="./data.json"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/app.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
