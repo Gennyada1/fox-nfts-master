@@ -81,7 +81,7 @@
                     </div>
                 </div>
 
-            </div>addre
+            </div>
         </div>
         <section id="token"
             class="sliders-img px-5 md:px-16 md:py-10 w-full h-full block md:grid gap-3 grid-cols-2">
@@ -90,7 +90,7 @@
                     <img src="./images/medal.png" alt="" class="h-20 w-20">
                     <div class="flex flex-col gap-2">
                         <h2 class="text-lg font-semibold leading-tight">Current Deposit <br>Prize</h2>
-                        <span class="font-bold text-xl text-green-700/70">${{totalValue}}.00</span>    
+                        <span class="font-bold text-xl text-green-700/70">$6,302.00</span>    
                     </div>
                 </div>
                 <div class="overflow-auto h-96">
@@ -106,12 +106,12 @@
                             <tr class="text-left">
                                 <th class="p-3">Days</th>
                                 <th class="p-3">Wallet</th>
-                                <th class="p-3">Deposit</th>
-                                <th class="p-3">Reward</th>
+                                <th class="p-3">Buy(bnb)</th>
+                                <th class="p-3">Reward(bnb)</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-if="items" class="border-b border-opacity-20 border-gray-700 bg-gray-900" v-for="(item, index) in items" :key="index">
+                            <tr class="border-b border-opacity-20 border-gray-700 bg-gray-900" v-for="(item, index) in items" :key="index">
                                 <td class="p-3">
                                     <p>{{item.days}}</p>
                                 </td>
@@ -122,21 +122,7 @@
                                     <p>{{item.deposit}}</p>
                                 </td>
                                 <td class="p-3">
-                                    <p>{{item.redraw}}</p>
-                                </td>
-                            </tr>
-                            <tr v-else class="border-b border-opacity-20 border-gray-700 bg-gray-900" v-for="(item, index) in items" :key="index">
-                                <td class="p-3">
-                                    <p>{{item.days}}</p>
-                                </td>
-                                <td class="p-3">
-                                    <p>{{item.wallet}}</p>
-                                </td>
-                                <td class="p-3">
-                                    <p>{{item.deposit}}</p>
-                                </td>
-                                <td class="p-3">
-                                    <p>{{item.redraw}}</p>
+                                    <p>1.5</p>
                                 </td>
                             </tr>
                         </tbody>
