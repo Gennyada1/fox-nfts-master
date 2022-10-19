@@ -9,7 +9,7 @@ const app = Vue.createApp({
     created() {
         axios.get('./data.json').then(response=>{
             this.items =response.data['info']
-            //this.items.reverse()
+            this.items.reverse()
             // this.items.forEach(element => {
             //     this.totalValue +=parseInt(element['deposit'])
                 
