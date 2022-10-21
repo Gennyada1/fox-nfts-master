@@ -10,7 +10,7 @@
             "id":2,
             "days": "2",
             "wallet": "0x9c2f290962dc2a165924ae508b49eaafd3fdf74c",
-            "deposit": "0.3"
+            "deposit": "0.5"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "id": 4,
             "days": "4",
             "wallet": "0x313d9f620d40afe4a5a5e26460ce87d0ddbe2c52",
-            "deposit": "0.15"
+            "deposit": "0.75"
         }
     ]
 }
