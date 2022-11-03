@@ -69,7 +69,11 @@
                     <h3 data-aos="fade-right" class="font-light text-sm text-slate-300 my-5">
                         The second-largest cryptocurrency by market capitalization (market cap), Ether, is a natural subject for comparison with bitcoin.
                         A trading pair is a function that represents two cryptocurrencies that can be exchanged for one another on an exchange, such as ether-bitcoin (ETH/BTC).
-                    </h3>
+                    </h3>        
+                    <span class="text-xl text-[#f68e3a]">Pre-Sale In</span>
+                    <br>
+                    <!-- Display the countdown timer in an element -->
+                    <p class="font-bold text-6xl text-white" id="demo"></p>
                     <br>
                     <a href="#token"
                         class="py-2 px-5 md:px-10 rounded-md font-bold leading-8 inline-block transition-all duration-150 ease-linear text-white hover:bg-white hover:text-black bg-[#f68e3a]">Get
@@ -284,6 +288,37 @@
                 <a href="https://bscscan.com/token/0x7C82560505b981fAea9E8c11d5E0A04F2a0F01CA" class=" text-[#f68e3a]">0x7C82560505b981fAea9E8c11d5E0A04F2a0F01CA</a>
             </div>
         </div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 25, 2022 01:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
